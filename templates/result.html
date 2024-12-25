@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Trends Results</title>
+</head>
+<body>
+    <h1>Twitter Trends Results</h1>
+    <p>These are the most happening topics as of {{ data["timestamp"] }}:</p>
+    <ul>
+        <li>{{ data["trend1"] }}</li>
+        <li>{{ data["trend2"] }}</li>
+        <li>{{ data["trend3"] }}</li>
+        <li>{{ data["trend4"] }}</li>
+        <li>{{ data["trend5"] }}</li>
+    </ul>
+    <p>The IP address used for this query was {{ data["ip_address"] }}.</p>
+    <pre>{{ data }}</pre>
+    <button onclick="window.location.href='/'">Click here to run the query again</button>
+</body>
+</html>
